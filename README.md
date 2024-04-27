@@ -10,7 +10,6 @@ pip install .
 # Test the FASTAPI
 
 ```json
-
 {
   "Gender": "Male",
   "Married": "No",
@@ -24,14 +23,13 @@ pip install .
   "Credit_History": "1.0",
   "Property_Area": "Rural"
 }
-
-
 ```
 
 # Docker Commands
+
 ```
 docker build -t loan_pred:v1 .
-docker build -t manifoldailearning/cicd:latest . 
+docker build -t manifoldailearning/cicd:latest .
 docker push manifoldailearning/cicd:latest
 
 docker run -d -it --name modelv1 -p 8005:8005 manifoldailearning/cicd:latest bash
@@ -70,7 +68,6 @@ sudo systemctl status jenkins
 ```
 
 `
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 `
 
 ```bash
@@ -91,14 +88,14 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-sudo usermod -a -G docker jenkins
-sudo usermod -a -G docker $USER
+
 
 ```
 
 # Admin password Jenkins
 
 `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
+a027c3e12ea74079a60ad9f376eba9b1
 
 # Payload URL format in github repo webhook
 
@@ -119,3 +116,4 @@ docker images --format "{{.ID}} {{.CreatedAt}}" | sort -rk 2 | awk 'NR==1{print 
 
 
 
+```
